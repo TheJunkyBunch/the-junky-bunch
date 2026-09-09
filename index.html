@@ -1,132 +1,95 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Junky Bunch LLC | Junk Removal in Indianapolis</title>
-  <meta name="description" content="Family owned and locally operated junk removal serving Indianapolis and surrounding areas. Furniture, appliances, garage cleanouts, yard waste, move-outs and more.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Pacifico&display=swap" rel="stylesheet">
-  <style>
-    :root{--green:#57B51A;--green2:#7AC943;--pink:#57B51A;--pink2:#7AC943;--ink:#0d0d0f;--soft:#f6f6f7;--line:#ddd;--white:#fff}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Montserrat,Arial,sans-serif;color:var(--ink);background:#fff}
-    a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}
-    header{position:sticky;top:0;z-index:20;background:#0b0b0b;color:#fff;border-bottom:1px solid #222}
-    .top{height:34px;display:flex;justify-content:flex-end;align-items:center;gap:24px;font-size:12px;color:#eee}
-    .top b{color:var(--green2)}
-    nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-    .brand{font-weight:900;font-size:22px;line-height:.9;color:#fff}.brand span{color:var(--green2)}.brand small{display:block;font-size:8px;letter-spacing:2px;color:#aaa;margin-top:5px}
-    .links{display:flex;align-items:center;gap:25px;font-size:12px;font-weight:700}.links a:hover{color:var(--green2)}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--green);color:#fff;border:0;border-radius:5px;padding:14px 20px;font-weight:800;cursor:pointer;transition:.2s}.btn:hover{background:#469613;transform:translateY(-1px)}
-    .hero{background:linear-gradient(90deg,#080809 0%,rgba(8,8,9,.94) 38%,rgba(8,8,9,.38) 70%,rgba(8,8,9,.25)),url("assets/hero-preview.png") center/cover;min-height:590px;color:#fff;display:flex;align-items:center}
-    .hero-copy{max-width:650px;padding:72px 0}.eyebrow{color:var(--green2);font-size:14px;font-weight:900;letter-spacing:2px}.hero h1{font-size:clamp(38px,5.5vw,68px);line-height:.98;margin:12px 0 20px;font-weight:900;text-transform:uppercase}.hero h1 span{color:var(--green2)}.hero p{font-size:18px;line-height:1.6;max-width:550px;color:#eee}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.phone{font-size:16px;font-weight:800;margin-top:20px}
-    .trust{background:#fff;border-bottom:1px solid var(--line)}.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:25px 0}.trust-item{display:flex;gap:12px;align-items:center;border-right:1px solid #ddd;padding-right:15px}.trust-item:last-child{border:0}.icon{font-size:27px;color:var(--green)}.trust-item b{font-size:12px;display:block}.trust-item span{font-size:11px;color:#777}
-    section{padding:75px 0}.dark{background:#f5f5f5;color:#111}.section-title{text-align:center;font-size:34px;margin:0 0 12px;font-weight:900}.section-title span{color:var(--green2)}.lead{text-align:center;max-width:680px;margin:0 auto 38px;color:#666;line-height:1.7}.dark .lead{color:#666}
-    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;color:#111;border-radius:8px;overflow:hidden;border:1px solid #ddd}.card .photo{height:155px;background:linear-gradient(135deg,#333,#888);display:flex;align-items:flex-end;padding:18px;font-weight:900;font-size:18px}.card:nth-child(2) .photo{background:linear-gradient(135deg,#555,#aaa)}.card:nth-child(3) .photo{background:linear-gradient(135deg,#3e2f25,#a98462)}.card:nth-child(4) .photo{background:linear-gradient(135deg,#5d5147,#b5a99e)}.card:nth-child(5) .photo{background:linear-gradient(135deg,#31462e,#8ca178)}.card:nth-child(6) .photo{background:linear-gradient(135deg,#7a6b5d,#c6b39c)}.card p{padding:0 18px 18px;color:#666;font-size:13px;line-height:1.6}.tag{color:#fff;text-shadow:0 1px 3px #000}
-    .why{display:grid;grid-template-columns:1fr 2fr;gap:45px;align-items:start}.why h2{font-size:38px;margin:0 0 15px}.why p{color:#666;line-height:1.7}.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}.why-box{border-top:3px solid var(--green);padding-top:18px}.why-box h3{margin:0 0 8px}.why-box p{margin:0;font-size:14px}
-    .booking{background:var(--soft)}.booking-wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:40px;align-items:start}.booking-copy h2{font-size:38px;margin:8px 0 15px}.booking-copy ul{padding:0;list-style:none;line-height:2.2}.booking-copy li:before{content:"✓";color:var(--green);font-weight:900;margin-right:10px}.script{font-family:Pacifico,cursive;color:var(--green);font-size:25px}
-    form{background:#111;color:#fff;padding:30px;border-radius:9px;box-shadow:0 18px 50px #0002}.step{display:flex;justify-content:space-between;align-items:center;margin-bottom:25px;color:#999;font-size:11px;font-weight:700}.step strong{color:#fff}.progress{height:3px;background:#333;margin:0 0 25px}.progress i{display:block;width:25%;height:100%;background:var(--green)}label{display:block;font-size:12px;font-weight:700;margin:16px 0 7px}input,select,textarea{width:100%;padding:13px;border:1px solid #444;background:#19191b;color:#fff;border-radius:5px;font:inherit;font-size:13px}textarea{min-height:90px;resize:vertical}.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.size{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.size label{margin:0}.size input{display:none}.size span{display:block;text-align:center;border:1px solid #444;padding:12px 5px;border-radius:5px;font-size:11px}.size input:checked+span{border-color:var(--green);background:#3a1427}.form-actions{display:flex;justify-content:flex-end;margin-top:20px}.success{display:none;text-align:center;padding:25px}.success h3{color:var(--green2)}
-    .cta{background:var(--green);color:#fff;text-align:center;padding:55px 0}.cta h2{font-size:35px;margin:0 0 12px}.cta p{margin:0 0 22px}.cta .btn{background:#111}
-    footer{background:#0b0b0b;color:#ddd;padding:55px 0 25px}.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:35px}.footer-title{font-size:13px;font-weight:900;color:#fff;margin-bottom:15px}.footer p,.footer a{font-size:12px;line-height:1.8;color:#aaa}.copyright{border-top:1px solid #222;margin-top:35px;padding-top:18px;font-size:11px;color:#777}
-
-    .logo-img{height:72px;width:auto;display:block;object-fit:contain}
-    .quote-banner{display:inline-block;margin-top:14px;padding:10px 14px;border-left:4px solid var(--green2);background:#0f1710;color:#fff;font-weight:900;font-size:13px;letter-spacing:.5px}.booking-embed{background:#111;color:#fff;padding:22px;border-radius:9px;box-shadow:0 18px 50px #0002;overflow:hidden}.booking-embed-title{font-size:20px;font-weight:900;margin-bottom:6px}.booking-embed-note{font-size:12px;line-height:1.6;color:#bbb;margin:0 0 15px}.booking-embed iframe{display:block;width:100%;min-height:700px;background:#fff;border-radius:5px}
-    @media(max-width:800px){.logo-img{height:52px}}
-
-    .work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.work-pair{background:#fff;border:1px solid #ddd;border-radius:9px;overflow:hidden}.work-pair h3{margin:0;padding:18px 18px 5px;font-size:18px}.work-pair p{margin:0;padding:0 18px 18px;color:#666;font-size:12px;line-height:1.6}.ba{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:#111}.ba figure{margin:0;position:relative;height:300px;background:#eee;overflow:hidden}.ba img{width:100%;height:100%;object-fit:cover;display:block}.ba figcaption{position:absolute;left:10px;bottom:10px;background:#0b0b0bdd;color:#fff;padding:7px 10px;border-radius:4px;font-size:10px;font-weight:900;letter-spacing:1px}.ba figcaption.after{background:var(--green)}.facebook-link{display:inline-flex;align-items:center;gap:8px;font-weight:800;color:#fff}.facebook-link:hover{color:var(--green2)}
-    @media(max-width:800px){.work-grid{grid-template-columns:1fr}.ba figure{height:260px}}
-    .mobile{display:none}
-    @media(max-width:800px){.links{display:none}.mobile{display:block}.top{display:none}nav{height:66px}.trust-grid{grid-template-columns:1fr 1fr}.trust-item:nth-child(2){border:0}.services,.why,.booking-wrap,.footer-grid{grid-template-columns:1fr}.why-grid{grid-template-columns:1fr}.size{grid-template-columns:1fr 1fr}.hero{min-height:650px}.hero-copy{padding:50px 0}.hero p{font-size:16px}.section-title{font-size:28px}.booking-copy h2,.why h2{font-size:31px}}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Junky Bunch LLC | Junk Removal in Indianapolis</title>
+<meta name="description" content="Family owned and locally operated junk removal serving Indianapolis and surrounding areas. Licensed and fully insured. Free in-person no-obligation quotes available.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--g:#46c116;--g2:#7bdc31;--black:#0a0a0a;--ink:#111;--muted:#626262;--soft:#f5fff0;--line:#e4e4e4;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Montserrat,Arial,sans-serif;color:var(--ink);background:#fff}a{text-decoration:none;color:inherit}.container{width:min(1180px,94%);margin:auto}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:7px;padding:15px 22px;background:var(--g);color:#fff;font-weight:900;border:0;transition:.2s}.btn:hover{transform:translateY(-1px);filter:brightness(.94)}
+header{background:#fff;position:sticky;top:0;z-index:30;border-bottom:1px solid #eee}.head{display:grid;grid-template-columns:250px 1fr;gap:24px;align-items:center;padding:8px 0}.logo{width:225px;max-height:108px;object-fit:contain;display:block}.head-right{display:flex;flex-direction:column;gap:10px}.contactbar{display:flex;justify-content:flex-end;gap:22px;align-items:center;font-size:13px;font-weight:700}.contactbar a{display:inline-flex;gap:8px;align-items:center}.contactbar .fb{color:#1877f2}.navrow{display:flex;justify-content:flex-end;align-items:center;gap:28px;font-size:12px;font-weight:900}.navrow>a:not(.btn){padding:10px 0}.navrow>a:not(.btn):hover{color:var(--g)}
+.hero{background:#090909;color:#fff;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.05fr 1.25fr;min-height:520px}.hero-copy{padding:48px 18px 50px 0;display:flex;flex-direction:column;justify-content:center}.eyebrow{font-size:15px;letter-spacing:.4px;font-weight:900;color:var(--g2)}.hero h1{font-size:clamp(43px,5.4vw,74px);line-height:.96;margin:10px 0 18px;font-weight:900;text-transform:uppercase}.hero h1 span{color:var(--g)}.hero p{font-size:17px;line-height:1.55;color:#efefef;max-width:620px}.quote{margin-top:18px;border-left:4px solid var(--g);background:#101710;padding:14px 16px;font-weight:900;font-size:16px;max-width:580px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:20px}.actions .secondary{background:#fff;color:#111}.hero-photo{min-height:520px;background:linear-gradient(90deg,#090909 0,rgba(9,9,9,.08) 20%),url('assets/hero-truck.jpg') center/cover no-repeat}
+.section{padding:56px 0}.title{text-align:center;font-size:34px;font-weight:900;margin:0 0 8px}.title span{color:var(--g)}.lead{text-align:center;color:var(--muted);margin:0 auto 28px;max-width:760px;line-height:1.6}.services{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.service-card{border-radius:7px;overflow:hidden;box-shadow:0 2px 10px #0001;background:#fff}.service-card img{display:block;width:100%;height:145px;object-fit:cover}.service-card h3{margin:0;background:var(--g);color:#fff;text-align:center;padding:10px 8px;font-size:12px;min-height:42px;display:flex;align-items:center;justify-content:center}.benefits{display:grid;grid-template-columns:repeat(5,1fr);gap:0;padding-top:26px}.benefit{text-align:center;padding:8px 18px;border-right:1px solid #ddd}.benefit:last-child{border-right:0}.benefit .ico{font-size:38px;line-height:1;color:var(--g);margin-bottom:9px}.benefit b{display:block;font-size:13px;line-height:1.25}.benefit span{display:block;color:#555;font-size:12px;line-height:1.45;margin-top:7px}
+.work{background:linear-gradient(#f4fff0,#eaffdf)}.work-head{display:flex;justify-content:center;align-items:center;gap:24px;margin-bottom:8px}.work-head .line{height:2px;background:var(--g);width:120px}.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:25px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:5px}.shot{position:relative;border-radius:7px;overflow:hidden;background:#ddd;height:260px}.shot img{width:100%;height:100%;object-fit:cover;display:block}.shot b{position:absolute;left:0;right:0;bottom:0;background:#0b0b0b;color:#fff;text-align:center;padding:8px;font-size:11px}.work-card h3{text-align:center;margin:8px 0 0;font-size:15px}
+.how{padding:58px 0}.how-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.step{border-top:4px solid var(--g);padding-top:14px}.step b{font-size:13px}.step p{font-size:12px;line-height:1.55;color:#666}
+.booking{background:#f6f6f6;padding:60px 0}.booking-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:36px}.booking h2{font-size:36px;margin:8px 0 12px}.booking ul{padding-left:0;list-style:none;line-height:2}.booking li:before{content:'✓';color:var(--g);font-weight:900;margin-right:9px}.calendar{background:#111;padding:16px;border-radius:9px}.calendar iframe{width:100%;height:690px;border:0;background:#fff;border-radius:5px}.mini-note{font-size:12px;color:#666;line-height:1.5}.footer-cta{background:#0d120d;color:#fff;padding:28px 0}.footer-cta .container{display:flex;justify-content:space-between;align-items:center;gap:20px}.footer-cta h2{margin:0;font-size:30px}.footer-cta h2 span{color:var(--g)}.footer-cta p{margin:8px 0 0;color:#ddd}.footer-actions{display:flex;flex-direction:column;gap:10px;align-items:flex-end;font-size:12px}.footer-actions .links{display:flex;gap:20px;flex-wrap:wrap;justify-content:flex-end}.copyright{background:#070707;color:#888;text-align:center;padding:14px;font-size:11px}
+@media(max-width:1000px){.services{grid-template-columns:repeat(2,1fr)}.benefits{grid-template-columns:repeat(2,1fr)}.benefit{border-right:0;border-bottom:1px solid #ddd;padding:18px}.work-grid{grid-template-columns:1fr}.booking-grid{grid-template-columns:1fr}.hero-grid{grid-template-columns:1fr}.hero-copy{padding:46px 0}.hero-photo{min-height:380px}.head{grid-template-columns:190px 1fr}.logo{width:180px}.contactbar{font-size:11px;gap:12px}.navrow{gap:15px}.how-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:720px){.head{display:block}.logo{width:155px;margin:auto}.head-right{margin-top:8px}.contactbar{justify-content:center;flex-wrap:wrap}.navrow{justify-content:center;flex-wrap:wrap;gap:12px}.navrow a:not(.btn){display:none}.navrow .btn{width:100%}.hero h1{font-size:43px}.hero-photo{min-height:300px}.services{grid-template-columns:1fr 1fr}.service-card img{height:120px}.benefits{grid-template-columns:1fr}.work-grid{grid-template-columns:1fr}.shot{height:220px}.how-grid{grid-template-columns:1fr}.footer-cta .container{flex-direction:column;align-items:flex-start}.footer-actions{align-items:flex-start}.footer-actions .links{justify-content:flex-start}.calendar iframe{height:610px}}
+</style>
 </head>
 <body>
 <header>
-  <div class="container top"><span><b>☎</b> 317-203-9390</span><span><b>✉</b> info@thejunkybunch.com</span></div>
-  <nav class="container">
-    <a class="brand" href="#"><img class="logo-img" src="assets/logo.png" alt="The Junky Bunch LLC logo"></a>
-    <div class="links"><a href="#services">SERVICES</a><a href="#work">OUR WORK</a><a href="#how">HOW IT WORKS</a><a href="#contact">CONTACT</a><a class="btn" href="#schedule">SCHEDULE NOW</a></div>
-    <a class="mobile btn" href="#schedule">BOOK</a>
-  </nav>
+  <div class="container head">
+    <a href="#"><img class="logo" src="assets/logo.jpg" alt="The Junky Bunch LLC"></a>
+    <div class="head-right">
+      <div class="contactbar">
+        <a href="tel:3172039390">📞 317-203-9390</a>
+        <a href="mailto:info@thejunkybunch.com">✉️ info@thejunkybunch.com</a>
+        <a class="fb" href="https://www.facebook.com/share/1CPuNrUmSv/" target="_blank" rel="noopener">▣ The Junky Bunch LLC</a>
+      </div>
+      <nav class="navrow"><a href="#services">SERVICES</a><a href="#work">OUR WORK</a><a href="#how">HOW IT WORKS</a><a href="#contact">CONTACT</a><a class="btn" href="#schedule">📅 SCHEDULE NOW</a></nav>
+    </div>
+  </div>
 </header>
-
 <main>
 <section class="hero">
-  <div class="container hero-copy">
-    <div class="eyebrow">FAMILY OWNED • LOCALLY OPERATED</div>
-    <h1>WE DO THE <span>HEAVY LIFTING.</span><br>YOU GET YOUR SPACE BACK.</h1>
-    <p>Fast, friendly, judgment-free junk removal for homes, businesses, cleanouts, and more throughout Indianapolis and surrounding areas.</p><p class="quote-banner">FREE IN-PERSON NO OBLIGATION QUOTES AVAILABLE</p>
-    <div class="hero-actions"><a class="btn" href="#schedule">📅 SCHEDULE YOUR PICKUP</a><a class="btn" style="background:#fff;color:#111" href="tel:3172039390">CALL 317-203-9390</a></div>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow">FAMILY OWNED • LOCALLY OPERATED</div>
+      <h1>WE DO THE <span>HEAVY LIFTING.</span><br>YOU GET YOUR SPACE BACK.</h1>
+      <p>Fast, friendly, judgment-free junk removal for homes, businesses, cleanouts, and more throughout Indianapolis and surrounding areas.</p>
+      <div class="quote">FREE IN-PERSON NO OBLIGATION QUOTES AVAILABLE</div>
+      <div class="actions"><a class="btn" href="#schedule">📅 SCHEDULE YOUR PICKUP</a><a class="btn secondary" href="tel:3172039390">📞 CALL 317-203-9390</a></div>
+    </div>
+    <div class="hero-photo" aria-label="Junk removal trailer"></div>
   </div>
 </section>
-
-<div class="trust"><div class="container trust-grid">
-  <div class="trust-item"><div class="icon">✓</div><div><b>UPFRONT PRICING</b><span>No surprise fees</span></div></div>
-  <div class="trust-item"><div class="icon">♥</div><div><b>JUDGMENT-FREE</b><span>We treat your space with respect</span></div></div>
-  <div class="trust-item"><div class="icon">★</div><div><b>LICENSED & FULLY INSURED</b><span>Professional service you can trust</span></div></div>
-  <div class="trust-item"><div class="icon">★</div><div><b>WE DO THE WORK</b><span>You point, we load & haul</span></div></div>
-  <div class="trust-item"><div class="icon">⌖</div><div><b>INDIANAPOLIS AREA</b><span>Serving surrounding communities</span></div></div>
-  <div class="trust-item"><div class="icon">% </div><div><b>MILITARY / VETERAN & SENIOR DISCOUNTS</b><span>Senior discount for ages 65+</span></div></div>
-</div></div>
-
-<section id="services" class="dark">
-  <div class="container"><h2 class="section-title">OUR JUNK REMOVAL <span>SERVICES</span></h2><p class="lead">Whether it's one bulky item or a whole space that needs a fresh start, The Junky Bunch is ready to help.</p>
-  <div class="services">
-    <article class="card"><div class="photo"><span class="tag">FURNITURE REMOVAL</span></div><p>Couches, tables, beds, dressers, desks and other unwanted furniture.</p></article>
-    <article class="card"><div class="photo"><span class="tag">APPLIANCE REMOVAL</span></div><p>Refrigerators, washers, dryers and other household appliances.</p></article>
-    <article class="card"><div class="photo"><span class="tag">GARAGE CLEANOUTS</span></div><p>Take back your garage and turn cluttered space into usable space.</p></article>
-    <article class="card"><div class="photo"><span class="tag">STORAGE UNIT CLEAN OUTS</span></div><p>Complete storage unit cleanouts, from a few unwanted items to packed spaces.</p></article>
-    <article class="card"><div class="photo"><span class="tag">YARD WASTE</span></div><p>Branches, brush and other eligible outdoor clutter removal.</p></article>
-    <article class="card"><div class="photo"><span class="tag">MOVE-OUT CLEANOUTS</span></div><p>Fast cleanouts for moves, rentals, estates and property turnovers.</p></article>
-  </div></div>
+<section id="services" class="section">
+  <div class="container">
+    <h2 class="title">OUR JUNK REMOVAL <span>SERVICES</span></h2>
+    <p class="lead">We handle the mess so you don't have to. No job is too big or too small.</p>
+    <div class="services">
+      <article class="service-card"><img src="assets/furniture.jpg" alt="Furniture removal"><h3>FURNITURE REMOVAL</h3></article>
+      <article class="service-card"><img src="assets/appliance.jpg" alt="Appliance removal"><h3>APPLIANCE REMOVAL</h3></article>
+      <article class="service-card"><img src="assets/garage.jpg" alt="Garage clean out"><h3>GARAGE CLEAN OUTS</h3></article>
+      <article class="service-card"><img src="assets/storage.jpg" alt="Storage unit clean out"><h3>STORAGE UNIT CLEAN OUTS</h3></article>
+      <article class="service-card"><img src="assets/construction.jpg" alt="Construction debris"><h3>CONSTRUCTION DEBRIS</h3></article>
+      <article class="service-card"><img src="assets/yard.jpg" alt="Yard debris removal"><h3>YARD DEBRIS REMOVAL</h3></article>
+      <article class="service-card"><img src="assets/shed-service.jpg" alt="Shed demo and removal"><h3>SHED DEMO & REMOVAL</h3></article>
+      <article class="service-card"><img src="assets/house-cleanout.jpg" alt="House and apartment cleanouts"><h3>HOUSE & APARTMENT CLEAN OUTS</h3></article>
+      <article class="service-card"><img src="assets/mattress.jpg" alt="Mattress removal"><h3>MATTRESS REMOVAL</h3></article>
+      <article class="service-card"><img src="assets/commercial.jpg" alt="Commercial cleanout"><h3>COMMERCIAL CLEAN OUTS</h3></article>
+    </div>
+    <div class="benefits">
+      <div class="benefit"><div class="ico">🛡</div><b>LICENSED &<br>FULLY INSURED</b><span>Your property is in good hands.</span></div>
+      <div class="benefit"><div class="ico">👥</div><b>VETERAN &<br>MILITARY DISCOUNTS</b><span>Thank you for your service!</span></div>
+      <div class="benefit"><div class="ico">♟</div><b>SENIOR DISCOUNTS<br>(65+)</b><span>Because our community matters.</span></div>
+      <div class="benefit"><div class="ico">♻</div><b>WE DONATE<br>& RECYCLE</b><span>Keeping usable items out of landfills.</span></div>
+      <div class="benefit"><div class="ico">♥</div><b>JUDGMENT FREE</b><span>We are here to help, no matter the mess.</span></div>
+    </div>
+  </div>
 </section>
-
-<section class="dark" style="padding-top:0"><div class="container"><div style="background:#111;color:#fff;border-radius:9px;padding:28px 30px;display:flex;justify-content:space-between;align-items:center;gap:25px;flex-wrap:wrap"><div><div class="eyebrow">PROFESSIONAL • TRUSTED • LOCAL</div><h3 style="font-size:25px;margin:5px 0 6px">LICENSED & FULLY INSURED</h3><p style="margin:0;color:#bbb">Plus, we proudly offer Military / Veteran Discounts and Senior Discounts for customers age 65+.</p></div><a class="btn" href="#schedule">GET YOUR QUOTE</a></div></div></section>
-
-
-<section id="work">
-  <div class="container"><div class="eyebrow" style="text-align:center">REAL JOBS • REAL RESULTS</div><h2 class="section-title">BEFORE & <span>AFTER</span></h2><p class="lead">A few transformations completed by The Junky Bunch. From shed removal to apartment and room cleanouts, we do the heavy lifting so you can get your space back.</p>
+<section id="work" class="section work">
+  <div class="container">
+    <div class="work-head"><span class="line"></span><h2 class="title" style="margin:0">OUR <span>WORK</span></h2><span class="line"></span></div>
+    <p class="lead">Real jobs. Real results. See the difference we make!</p>
     <div class="work-grid">
-      <article class="work-pair"><div class="ba"><figure><img src="assets/shed-before.jpg" alt="Old shed before removal" loading="lazy"><figcaption>BEFORE</figcaption></figure><figure><img src="assets/shed-after.jpg" alt="Yard after shed removal" loading="lazy"><figcaption class="after">AFTER</figcaption></figure></div><h3>Shed Removal</h3><p>Old structure removed and the yard cleared so the space can be used again.</p></article>
-      <article class="work-pair"><div class="ba"><figure><img src="assets/balcony-before.jpg" alt="Balcony before junk removal" loading="lazy"><figcaption>BEFORE</figcaption></figure><figure><img src="assets/balcony-after.jpg" alt="Balcony after junk removal" loading="lazy"><figcaption class="after">AFTER</figcaption></figure></div><h3>Balcony Cleanout</h3><p>Clutter hauled away and the outdoor space cleared from wall to railing.</p></article>
-      <article class="work-pair"><div class="ba"><figure><img src="assets/cleanout-before-1.jpg" alt="Room before cleanout" loading="lazy"><figcaption>BEFORE</figcaption></figure><figure><img src="assets/cleanout-after.jpg" alt="Room after cleanout" loading="lazy"><figcaption class="after">AFTER</figcaption></figure></div><h3>Room Cleanout</h3><p>A packed room cleared out with judgment-free service and careful hauling.</p></article>
+      <article class="work-card"><div class="pair"><div class="shot"><img src="assets/shed-before.jpg" alt="Shed before removal"><b>BEFORE</b></div><div class="shot"><img src="assets/shed-after.jpg" alt="Yard after shed removal"><b>AFTER</b></div></div><h3>Shed Removal</h3></article>
+      <article class="work-card"><div class="pair"><div class="shot"><img src="assets/balcony-before.jpg" alt="Balcony before cleanout"><b>BEFORE</b></div><div class="shot"><img src="assets/balcony-after.jpg" alt="Balcony after cleanout"><b>AFTER</b></div></div><h3>Balcony Cleanout</h3></article>
+      <article class="work-card"><div class="pair"><div class="shot"><img src="assets/room-before.jpg" alt="Room before cleanout"><b>BEFORE</b></div><div class="shot"><img src="assets/room-after.jpg" alt="Room after cleanout"><b>AFTER</b></div></div><h3>Room Cleanout</h3></article>
     </div>
   </div>
 </section>
-
-<section id="how"><div class="container why">
-  <div><div class="eyebrow">SIMPLE. HONEST. LOCAL.</div><h2>WHY CHOOSE <span style="color:var(--green)">THE JUNKY BUNCH?</span></h2><p>We make junk removal easy, stress-free and affordable. Our team shows up ready to work hard, handles your property with care, and helps you reclaim your space without judgment.</p></div>
-  <div class="why-grid">
-    <div class="why-box"><h3>01. BOOK YOUR PICKUP</h3><p>Choose your service, tell us about the junk, and select a date and time that works for you.</p></div>
-    <div class="why-box"><h3>02. BOOK YOUR TIME</h3><p>Choose an available pickup time and your appointment is added to our Google Calendar.</p></div>
-    <div class="why-box"><h3>03. WE LOAD IT UP</h3><p>Point us toward the unwanted items. We'll do the lifting, loading and hauling.</p></div>
-    <div class="why-box"><h3>04. RECLAIM YOUR SPACE</h3><p>Enjoy a cleaner, more usable space while we handle responsible disposal.</p></div>
-  </div>
-</div></section>
-
-<section id="schedule" class="booking">
-  <div class="container booking-wrap">
-    <div class="booking-copy"><div class="eyebrow">READY TO GET STARTED?</div><h2>SCHEDULE YOUR <span style="color:var(--green)">JUNK REMOVAL</span> TODAY!</h2><p>Booking is quick and easy. Pick an available date and time, then tell us what you need removed.</p><ul><li>Choose your preferred date and time</li><li>Tell us what needs to be removed</li><li>Choose an estimated load size</li><li>Book your available pickup time</li></ul><div class="quote-banner">FREE IN-PERSON NO OBLIGATION QUOTES AVAILABLE</div><div class="script">Reclaim your space today!</div></div>
-    <div class="booking-embed">
-      <div class="booking-embed-title">BOOK YOUR PICKUP TIME</div>
-      <p class="booking-embed-note">Choose an available appointment time below. Your selected time will be added to our Google Calendar.</p>
-      <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3ENaj5ormxFPWibYSStwg5SEEUHdwPkWSPAvkj6c3BgOicMN4hvA8BeIAgRZCDR9lrWXVmi34F?gv=true" style="border: 0" width="100%" height="700" frameborder="0" title="Schedule a junk removal pickup with The Junky Bunch LLC"></iframe>
-    </div>
-  </div>
-</section>
-
-<section class="cta"><div class="container"><h2>GOT JUNK? WE'VE GOT YOU.</h2><p>Let's get that unwanted stuff out of your way.</p><a class="btn" href="#schedule">SCHEDULE A PICKUP</a></div></section>
+<section id="how" class="how"><div class="container"><h2 class="title">HOW IT <span>WORKS</span></h2><p class="lead">Simple, straightforward junk removal from booking to haul-away.</p><div class="how-grid"><div class="step"><b>01. BOOK YOUR PICKUP</b><p>Choose an available time and tell us what you need removed.</p></div><div class="step"><b>02. GET YOUR QUOTE</b><p>We provide straightforward pricing, including free in-person no-obligation quotes.</p></div><div class="step"><b>03. WE DO THE LIFTING</b><p>You point. We lift, load, and haul everything away.</p></div><div class="step"><b>04. RECLAIM YOUR SPACE</b><p>Enjoy a cleaner, more usable space without the hassle.</p></div></div></div></section>
+<section id="schedule" class="booking"><div class="container booking-grid"><div><div class="eyebrow">READY TO GET STARTED?</div><h2>SCHEDULE YOUR <span style="color:var(--g)">JUNK REMOVAL</span> TODAY!</h2><p>Pick an available time and book directly through our Google Calendar.</p><ul><li>Choose your preferred date and time</li><li>Tell us what needs to be removed</li><li>Book an available pickup time</li><li>Mention Military/Veteran or Senior 65+ discount if applicable</li></ul><p class="mini-note">Maximum 4 pickups per day. Availability shown below is updated through our booking calendar.</p></div><div class="calendar"><iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3ENaj5ormxFPWibYSStwg5SEEUHdwPkWSPAvkj6c3BgOicMN4hvA8BeIAgRZCDR9lrWXVmi34F?gv=true" title="Schedule a junk removal pickup with The Junky Bunch LLC"></iframe></div></div></section>
 </main>
-
-<footer id="contact"><div class="container footer-grid">
-  <div><div><img class="logo-img" src="assets/logo.png" alt="The Junky Bunch LLC logo"></div><p>Family owned and locally operated junk removal. Judgment-free service for Indianapolis and surrounding areas.</p></div>
-  <div><div class="footer-title">QUICK LINKS</div><a href="#services">Services</a><br><a href="#how">How It Works</a><br><a href="#schedule">Schedule</a><br><a href="#contact">Contact</a></div>
-  <div><div class="footer-title">CONTACT</div><p>☎ <a href="tel:3172039390">317-203-9390</a><br>✉ <a href="mailto:info@thejunkybunch.com">info@thejunkybunch.com</a><br>⌖ Indianapolis & surrounding areas</p><p><strong>Facebook:</strong> <a class="facebook-link" href="https://www.facebook.com/share/1CPuNrUmSv/" target="_blank" rel="noopener noreferrer" aria-label="Visit The Junky Bunch LLC on Facebook">The Junky Bunch LLC</a></p></div>
-  <div><div class="footer-title">BOOKING & DISCOUNTS</div><p>Choose an available pickup time and book online. Need a quote first? Free in-person no obligation quotes are available.</p><p><strong>Military / Veteran Discounts</strong><br><strong>Senior Discounts (65+)</strong><br><span style="font-size:11px;color:#aaa">Please mention your discount when booking.</span></p><a class="btn" href="#schedule">BOOK ONLINE</a></div>
-</div><div class="container copyright">© 2026 The Junky Bunch LLC. All Rights Reserved.</div></footer>
-
-<script>
-  // Google Calendar handles appointment availability and booking for this site.
-</script>
+<footer id="contact">
+  <div class="footer-cta"><div class="container"><div><h2>DECLUTTER TODAY FOR A <span>BRIGHTER TOMORROW</span></h2><p>Serving Indianapolis, and surrounding areas.</p></div><div class="footer-actions"><a class="btn" href="#schedule">📅 SCHEDULE NOW</a><div class="links"><a href="tel:3172039390">📞 317-203-9390</a><a href="mailto:info@thejunkybunch.com">✉️ info@thejunkybunch.com</a><a href="https://www.facebook.com/share/1CPuNrUmSv/" target="_blank" rel="noopener">Facebook: The Junky Bunch LLC</a></div></div></div></div>
+  <div class="copyright">© 2026 The Junky Bunch LLC. All Rights Reserved.</div>
+</footer>
 </body>
 </html>
